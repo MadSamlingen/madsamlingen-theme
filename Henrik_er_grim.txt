@@ -1,3 +1,10 @@
 Henrik er grim
 
+<<<<<<< HEAD
 Duffy er nice
+=======
+
+
+
+lololol tard
+>>>>>>> aajshfvajhsf
