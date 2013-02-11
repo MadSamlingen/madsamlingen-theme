@@ -2,6 +2,8 @@
 
 		<!-- Row for main content area -->
 		<div id="content" class="eight columns">
+
+grim doktor
 	
 			<div class="post-box">
 				<?php get_template_part('loop', 'single'); ?>
