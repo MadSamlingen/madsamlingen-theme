@@ -2,7 +2,7 @@
 /* Foundation 3, artfully masterminded by ZURB Addition offcanvas.css - Specific CSS for off-canvas layouts  Off canvas layout CSS/JS provided by or adapted from work by Jason Weaver and Luke Wroblewski
  Requires: globals.css grid.css
 */
-body.off-canvas { padding: 0; margin: 0; }
+body.off-canvas { background:url(../images/bg-body.gif);padding: 0; margin: 0; }
 
 .container { width: 100%; }
 

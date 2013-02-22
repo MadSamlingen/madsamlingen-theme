@@ -4,7 +4,7 @@
 
 html { font-size: 62.5%; }
 
-body { background: white; font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 1; color: #222222; position: relative; -webkit-font-smoothing: antialiased; }
+body { background: #f0f0f0; font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 1; color: #222222; position: relative; -webkit-font-smoothing: antialiased; }
 
 /* Links ---------------------- */
 a { color: #2ba6cb; text-decoration: none; line-height: inherit; }
@@ -14,6 +14,17 @@ a:hover { color: #2795b6; }
 a:focus { color: #2ba6cb; outline: none; }
 
 p a, p a:visited { line-height: inherit; }
+
+/* Frederiks brune tema ---------------------- */
+
+
+
+
+
+
+
+
+
 
 /* Misc ---------------------- */
 .left { float: left; }
@@ -833,7 +844,7 @@ div.progress.round .meter { -webkit-border-radius: 1000px; -moz-border-radius: 1
 .fixed { width: 100%; left: 0; position: fixed; top: 0; z-index: 99; }
 
 /* <nav> */
-.top-bar { background: #222222; height: 45px; line-height: 45px; margin: 0 0 30px; padding: 0; width: 100%; /* Contain width to .row width */ /* First <ul> for branding, title, name, etc */ /* topbar global <ul> styles */ }
+.top-bar { height: 45px; line-height: 45px; margin: -18px 0 30px; padding: 0; width: 70%;float:right; /* Contain width to .row width */ /* First <ul> for branding, title, name, etc */ /* topbar global <ul> styles */ }
 .contain-to-grid .top-bar { max-width: 940px; margin: 0 auto; }
 .top-bar > ul .name h1 { line-height: 45px; margin: 0; }
 .top-bar > ul .name h1 a { font-weight: bold; padding: 0 22.5px; font-size: 17px !important; }
@@ -858,6 +869,7 @@ div.progress.round .meter { -webkit-border-radius: 1000px; -moz-border-radius: 1
 .top-bar ul > li.has-dropdown { position: relative; /* Dropdown Level 2+ */ }
 .top-bar ul > li.has-dropdown:hover > .dropdown { display: block; visibility: visible; }
 .top-bar ul > li.has-dropdown a { padding-right: 33.75px; }
+.top-bar ul > li.has-dropdown p a { padding-right: 33.75px;}
 .top-bar ul > li.has-dropdown a:after { content: ""; display: block; width: 0; height: 0; border: solid 5px; border-color: white transparent transparent transparent; margin-right: 15px; margin-top: -2.5px; position: absolute; right: 0; top: 50%; }
 .top-bar ul > li.has-dropdown .dropdown { background: #222222; left: 0; margin: 0; padding: 9px 0 0 0; position: absolute; visibility: hidden; z-index: 99; }
 .top-bar ul > li.has-dropdown .dropdown li { background: #222222; line-height: 1; min-width: 100%; padding-bottom: 5px; }
@@ -873,7 +885,7 @@ div.progress.round .meter { -webkit-border-radius: 1000px; -moz-border-radius: 1
 .top-bar ul > li.has-dropdown .dropdown li.has-dropdown .dropdown { position: absolute; left: 100%; top: 0; }
 .top-bar ul > li.has-dropdown .dropdown li.has-dropdown:hover > .dropdown { display: block; }
 .top-bar ul.left { float: left; width: auto; margin-bottom: 0; }
-.top-bar ul.right { float: right; width: auto; margin-bottom: 0; /* Dropdown Right Side Alignment */ }
+.top-bar ul.right { background-image:url(../images/tab.png);background-repeat: no-repeat;float: right; width: auto; margin-bottom: 0;margin-left:20px; /* Dropdown Right Side Alignment */ }
 .top-bar ul.right .has-dropdown .dropdown { left: auto; right: -1px; }
 .top-bar ul.right .has-dropdown .dropdown li.has-dropdown > .dropdown { right: 100%; left: auto; width: 100%; }
 .top-bar .js-generated { display: none; }
@@ -1157,19 +1169,19 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   .tooltip { font-size: 14; line-height: 1.4; padding: 7px 10px 9px 10px; left: 50% !important; max-width: 80% !important; margin-left: -40%; font-size: 110%; }
   .tooltip > .nub, .tooltip.top > .nub, .tooltip.left > .nub, .tooltip.right > .nub { border-color: transparent transparent black transparent; border-color: transparent transparent rgba(0, 0, 0, 0.85) transparent; top: -12px; left: 10px; } }
 /* Topbar Specific Breakpoint that you can customize */
-@media only screen and (max-width: 940px) { .top-bar { margin-bottom: 0; overflow: hidden; height: 45px; background: #222222; /* Override contain to grid stuff for breakpoint */ /* Setting up the sliding area */ /* When the Small Nav is Showing */ }
+@media only screen and (max-width: 940px) { .top-bar { margin-bottom: 0; overflow: hidden; height: 45px; background: #dcc8ad; /* Override contain to grid stuff for breakpoint */ /* Setting up the sliding area */ /* When the Small Nav is Showing */ }
   .top-bar .js-generated { display: block; }
   .contain-to-grid .top-bar { width: auto; }
   .top-bar section { left: 0; position: relative; width: auto; -webkit-transition: left 300ms; -moz-transition: left 300ms; -o-transition: left 300ms; transition: left 300ms; }
   .top-bar ul { width: 100%; height: 100%; margin-bottom: 0; display: block; }
   .top-bar ul > li { float: none; /* Branding and name */ /* Dropdown Toggle */ /* Divider for breakpoint */ /* Search Overrides for breakpoint size */ /* Dropdown Level 1 */ /* Dropdown Level 2 */ }
   .top-bar ul > li.active, .top-bar ul > li:hover { background: #151515; }
-  .top-bar ul > li.name { background: black; height: 45px; }
+  .top-bar ul > li.name { background: #dcc8ad; height: 45px; }
   .top-bar ul > li.name h1 { line-height: 1; }
   .top-bar ul > li.name h1 a { color: white; display: block; line-height: 45px !important; padding-left: 22.5px; height: 45px; }
   .top-bar ul > li:hover a, .top-bar ul > li.active a { color: white; }
   .top-bar ul > li a:not(.button) { color: white; }
-  .top-bar ul > li.toggle-topbar { cursor: pointer; display: block; height: 45px; position: absolute; right: 0; top: 0; width: 50%; }
+  .top-bar ul > li.toggle-topbar { cursor: pointer; display: block; height: 45px; position: absolute; right: 0; top: 40px; width: 50%; }
   .top-bar ul > li.toggle-topbar a { content: ""; display: block; width: 0; height: 0; border: solid 8px; border-color: white transparent transparent transparent; padding: 0; position: absolute; top: 50%; right: 22.5px; margin-top: -4px; }
   .top-bar ul > li.toggle-topbar:hover { background: inherit; }
   .top-bar ul > li.toggle-topbar a { padding: 0 !important; }

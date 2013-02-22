@@ -33,6 +33,9 @@
 	<!-- Startup Image iPhone (320x460) -->
 	<link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/images/devices/reverie-load.png" media="screen and (max-device-width: 320px)" />
 
+<link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Engagement|Sacramento|Satisfy' rel='stylesheet' type='text/css'>
+
+
 <?php wp_head(); ?>
 
 </head>
@@ -45,32 +48,90 @@
 		<!-- Row for blog navigation -->
 		<div class="row top-header">
 			<header class="twelve columns" role="banner">
-				<div class="reverie-header">
-					<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
-					<h4 class="subheader"><?php bloginfo('description'); ?></h4>
-				</div>
-				<nav role="navigation" class="hide-for-small top-nav">
-					<?php
-						if ( has_nav_menu( 'primary_navigation' ) ):
-					    	wp_nav_menu( array(
-								'theme_location' => 'primary_navigation',
-								'container' =>false,
-								'menu_class' => '',
-								'echo' => true,
-								'before' => '',
-								'after' => '',
-								'link_before' => '',
-								'link_after' => '',
-								'depth' => 0,
-								'items_wrap' => '<ul class="nav-bar">%3$s</ul>',
-								'walker' => new reverie_walker())
-							);
-						endif;
-						?>
-				</nav>
-				<p class="show-for-small">
-					<a class='sidebar-button button' id="sidebarButton" href="#sidebar-off" >Menu</a>
-				</p> 
+				
+<div class="row">
+  <div class="twelve columns">
+
+<img style="float: left;margin-top: -22px;margin-left: 20px;" src="<?php bloginfo('template_directory'); ?>/images/logo.png">
+
+
+    <nav class="top-bar">
+
+
+      <section>
+
+        <!-- Left Nav Section -->
+        <ul class="right">
+          <li class="has-dropdown">
+            <a class="active" href="#" style="font-family: 'Sacramento', cursive;font-size: 24px;">Opskrfter</a>
+            <ul class="dropdown">
+              <li><label>Section Name</label></li>
+              <li class="has-dropdown">
+                <a href="#" class="">Level 1, Has Dropdown</a>
+                <ul class="dropdown">
+                  <li><a href="#">Level 2</a></li>
+                  <li><a href="#">Level 2</a></li>
+                  <li class="has-dropdown"><a href="#">Level 2, Has Dropdown</a>
+                    <ul class="dropdown">
+                      <li><label>Section</label></li>
+                      <li><a href="#">Level 3</a></li>
+                      <li><a href="#">Level 3</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Level 3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Level 2</a></li>
+                  <li><a href="#">Level 2</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Level 1</a></li>
+              <li><a href="#">Level 1</a></li>
+              <li class="divider"></li>
+              <li><label>Section Name</label></li>
+              <li><a href="#">Level 1</a></li>
+              <li><a href="#">Level 1</a></li>
+              <li><a href="#">Level 1</a></li>
+              <li class="divider"></li>
+              <li><a href="#">See all &rarr;</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="has-dropdown">
+            <a style="font-family: 'Sacramento', cursive;font-size: 24px;" href="#">Min madsamling</a>
+            <ul class="dropdown">
+              <li><label>Section Name</label></li>
+              <li><a href="#" class="">Level 1</a></li>
+              <li><a href="#">Dropdown Option</a></li>
+              <li><a href="#">Dropdown Option</a></li>
+              <li class="divider"></li>
+              <li><label>Section Name</label></li>
+              <li><a href="#">Dropdown Option</a></li>
+              <li><a href="#">Dropdown Option</a></li>
+              <li><a href="#">Dropdown Option</a></li>
+              <li class="divider"></li>
+              <li><a href="#">See all &rarr;</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+
+
+  </div>
+<div class="four columns">
+<?php get_search_form( $echo ); ?>
+</div>
+
+</div>
+
+
+
+
+				
 			</header>
 		</div>
 		
