@@ -140,4 +140,42 @@ add_action( 'init', 'codex_custom_init' );
 add_action('init', 'remove_admin_bar');
   show_admin_bar(false);
 
+// Opskrift type taxonomi
+
+//hook into the init action and call create_book_taxonomies when it fires
+add_action( 'init', 'create_book_taxonomies', 0 );
+
+//create two taxonomies, genres and writers for the post type "book"
+function create_book_taxonomies() 
+{
+  // Add new taxonomy, make it hierarchical (like categories)
+  $labels = array(
+    'name'                => _x( 'Opskrift typer', 'taxonomy general name' ),
+    'singular_name'       => _x( 'Opskrift type', 'taxonomy singular name' ),
+    'search_items'        => __( 'Søg blandt typer' ),
+    'all_items'           => __( 'Alle typer' ),
+    'parent_item'         => __( 'Overordnet typer' ),
+    'parent_item_colon'   => __( 'Overordnet typer:' ),
+    'edit_item'           => __( 'Rediger type' ), 
+    'update_item'         => __( 'Opdater type' ),
+    'add_new_item'        => __( 'Tilføj ny type' ),
+    'new_item_name'       => __( 'Nyt type navn' ),
+    'menu_name'           => __( 'Opskrift type' )
+  ); 	
+
+  $args = array(
+    'hierarchical'        => true,
+    'labels'              => $labels,
+    'show_ui'             => true,
+    'show_admin_column'   => true,
+    'query_var'           => true,
+    'rewrite'             => array( 'slug' => 'type' )
+  );
+
+  register_taxonomy( 'type', array( 'opskrift' ), $args );
+
+}
+
+
+
 ?>
